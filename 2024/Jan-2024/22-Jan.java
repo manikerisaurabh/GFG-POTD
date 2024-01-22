@@ -10,9 +10,9 @@ public class 22-Jan {
         curr.remove(curr.size()-1);
         
     }
+    //calling function
     public static ArrayList<ArrayList<Integer>> printPaths(Node root, int sum)
     {
-        // code here
         ArrayList<ArrayList<Integer>> list = new ArrayList<>();
         helper(root, sum, 0, list, new ArrayList<Integer>());
         return list;
