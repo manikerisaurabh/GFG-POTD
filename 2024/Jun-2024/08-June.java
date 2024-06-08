@@ -1,0 +1,18 @@
+public class 08-June {
+    public int findExtra(int n, int arr1[], int arr2[]) {
+        // add code here.
+         int xor = 0;
+        for (int i = 0; i < arr1.length; i++) {
+            xor ^= arr1[i];
+        }
+        for (int i = 0; i < arr2.length; i++) {
+            xor ^= arr2[i];
+        }
+        for (int i = 0; i < arr1.length; i++) {
+            if (arr1[i] == xor) {
+                return i;
+            }
+        }
+        return arr1.length;
+    }
+}
