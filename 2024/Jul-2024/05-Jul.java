@@ -1,7 +1,9 @@
 public class 05-Jul {
      public int verticalWidth(Node root) {
         // code here.
-        if (root == null) return 0;
+        if (root == null)  {
+            return 0;
+        } 
 
         Set<Integer> set = new HashSet<>();
         Queue<Node> nodes = new LinkedList<>();
